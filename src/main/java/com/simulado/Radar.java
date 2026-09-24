@@ -39,6 +39,15 @@ public class Radar {
         }
 
         double media = qtd > 0 ? soma / qtd : 0; //Caso a quantidade seja 0, não buga.
+        /*
+        Caso não queira usar o ternário:
+        
+        double media;
+        if(qtd > 0)
+            media = soma / qtd;
+        else
+            media = 0;
+        */
 
         System.out.println("Quantidade em movimento: " + qtd);
         System.out.println("Velocidade media: " + media);
